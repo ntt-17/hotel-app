@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FCFD"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".TrangChuActivity">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:queryHint="Search here..."
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hinhphong" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:stretchColumns="2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Rooms in hotel"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btngiuongdon"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+
+                android:layout_gravity="center"
+                android:backgroundTint="#00BCD4"
+                android:drawableTop="@drawable/giuongdon"
+                android:text="Single Room"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btngiuongdoi"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#00BCD4"
+                android:drawableTop="@drawable/giuongdoi"
+                android:text="Double Rooms"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btngiuong4"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#00BCD4"
+
+                android:drawableTop="@drawable/hinggiuongbon"
+                android:text="Quad Rooms"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btndichvu"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#00BCD4"
+                android:drawableTop="@drawable/hinhservice"
+                android:text="Single Room"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </TableLayout>
+
+</LinearLayout>
