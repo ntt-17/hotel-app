@@ -16,8 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:queryHint="Search here..."
-        />
+        app:queryHint="Search here..." />
 
     <ImageView
         android:id="@+id/imageView3"
